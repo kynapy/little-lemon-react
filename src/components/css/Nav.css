@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Karla');
+
+nav {
+    background-color: #FFFFFF;
+    list-style: none;
+    text-align: center;
+}
+
+nav li {
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: 1em;
+    font-family: 'Karla';
+    text-transform: uppercase;
+}
