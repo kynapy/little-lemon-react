@@ -1,3 +1,6 @@
+import restaurant from "./../images/restaurant.jpg";
+import "./css/Footer.css";
+
 function Footer() {
     return (
         <footer style={{
@@ -7,11 +10,13 @@ function Footer() {
             columnGap: "3vw",
             backgroundColor: "#EDEFEE",
         }}>
-            <div>Image</div>
+            <div><img src={ restaurant } style={{maxHeight: "150px"}}/></div>
             <div style={{
                 display: "grid",
                 gridTemplateColumns: "1fr 1fr 1fr",
                 columnGap: "1vw",
+                lineHeight: 0.3,
+                fontSize: 14,
             }}>
                 <div>
                     <p><b>Navigation</b></p>
