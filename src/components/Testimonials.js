@@ -1,6 +1,6 @@
 const Testimonials = props => {
     return (
-        <div></div>
+        <div><p>Testimonials</p></div>
     )
 }
 

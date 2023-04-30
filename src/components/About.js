@@ -1,6 +1,8 @@
 const About = props => {
     return (
-        <div></div>
+        <div>
+            <p>About</p>
+        </div>
     )
 }
 
