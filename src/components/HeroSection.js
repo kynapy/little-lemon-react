@@ -1,6 +1,6 @@
 import heroImage from "./../images/heroImage.jpg";
 
-const Hero = props => {
+const HeroSection = props => {
     return (
         <div
             id="hero"
@@ -46,4 +46,4 @@ const Hero = props => {
     )
 }
 
-export default Hero;
+export default HeroSection;
