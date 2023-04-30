@@ -1,9 +1,18 @@
-@import url('https://fonts.googleapis.com/css?family=Markazi Text');
+@import url('https://fonts.googleapis.com/css2?family=Markazi Text');
 
 #hero {
     font-family: "Markazi Text";
 }
 
 #hero button {
+    font-family: "Markazi Text";
+}
+
+#highlights {
+    font-family: "Markazi Text";
+    font-weight: 450;
+}
+
+#highlights button {
     font-family: "Markazi Text";
 }

@@ -8,7 +8,7 @@ function Main() {
     const heroParagraph = "Founded in 1987, the Little Lemon restaurant has been serving the people of Portsmouth Street traditional Italian dishes, with recipes crafted and passed down upon 3 generations.";
     return (
         <main>
-            <Hero id="hero" paragraph={ heroParagraph }/>
+            <Hero paragraph={ heroParagraph }/>
             <HighlightSection />
             <TestimonialSection />
             <About />
