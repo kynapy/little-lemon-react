@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Markazi Text');
+@import url('https://fonts.googleapis.com/css?family=Karla');
 
 #hero {
     font-family: "Markazi Text";
@@ -15,4 +16,8 @@
 
 #highlights button {
     font-family: "Markazi Text";
+}
+
+#about-section {
+    font-family: "Karla";
 }
