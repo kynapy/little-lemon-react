@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div style={{"display": "grid"}}>
+    <div style={{display: "grid"}}>
       <Header></Header>
       <Nav></Nav>
       <Main></Main>
