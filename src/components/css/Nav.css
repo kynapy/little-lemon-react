@@ -9,7 +9,8 @@ nav {
 nav li {
     vertical-align: middle;
     display: inline-block;
-    margin-left: 1em;
+    padding: 0px 1vw;
     font-family: 'Karla';
     text-transform: uppercase;
+    text-decoration: none;
 }
