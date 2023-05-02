@@ -34,7 +34,7 @@ const HighlightSection = props => {
                 display: "grid",
                 gridTemplateColumns: "1fr 1fr 1fr",
                 columnGap: "6vw",
-                width: "70vw"
+                width: "75vw"
             }}>
                 <Special
                     image={ greekSalad }

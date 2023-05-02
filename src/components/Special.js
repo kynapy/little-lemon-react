@@ -6,15 +6,22 @@ const Special = props => {
                 backgroundColor:"#EDEFEE",
             }}
         >
-            <img
-                src={ props.image }
+            <div
                 style={{
-                    float: "left",
-                    width: "180px",
-                    height: "110px",
-                    objectFit: "cover",
+                    width: "100%",
+                    height: "100px"
                 }}
-            />
+            >
+                <img
+                    src={ props.image }
+                    style={{
+                        float: "left",
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "cover",
+                    }}
+                />
+            </div>
             <div
                 style={{
                     display: "grid",
@@ -22,7 +29,7 @@ const Special = props => {
                     fontSize: 12,
                 }}
             >
-                <div style={{paddingLeft: "10px"}}>
+                <div style={{paddingLeft: "10px", textOverflow: "clip", overflow: "hidden"}}>
                     <p><b>{ props.dishName }</b></p>
                 </div>
                 <div style={{textAlign: "right", color: "#BF0808", paddingRight: "10px"}}>
