@@ -6,7 +6,7 @@ function Nav() {
     return (
         <nav>
             <ul>
-                <li><img src={ Logo } alt="Little Lemon Logo"></img></li>
+                <li><Link to="/"><img src={ Logo } alt="Little Lemon Logo"></img></Link></li>
                 <li><Link style={{textDecoration: "none", color: "black"}}>About</Link></li>
                 <li><Link style={{textDecoration: "none", color: "black"}}>Menu</Link></li>
                 <li><Link to="/reservation-page" style={{textDecoration: "none", color: "black"}}>Reservations</Link></li>
