@@ -1,17 +1,23 @@
 import './App.css';
-import Header from './components/Header';
+import { Routes, Route } from 'react-router-dom';
+import Homepage from './components/Homepage';
 import Nav from './components/Nav';
-import Main from './components/Main';
+import ReservationPage from './components/ReservationPage';
 import Footer from './components/Footer';
 
 function App() {
   return (
-    <div style={{display: "grid"}}>
-      <Header></Header>
-      <Nav></Nav>
-      <Main></Main>
-      <Footer></Footer>
-    </div>
+    <>
+      <Nav />
+      <Routes>
+        <Route path="/" element={ <Homepage /> } />
+        <Route path="/reservation-page" element={ <ReservationPage /> }/>
+        <Route path="/menu" />
+        <Route path="/order" />
+        <Route path="/login" />
+      </Routes>
+      <Footer />
+    </>
   );
 }
 
