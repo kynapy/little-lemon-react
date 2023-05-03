@@ -1,7 +1,7 @@
 import { useState } from "react";
+import { fetchAPI } from "./FetchAPI";
 
 const ReservationForm = props => {
-    let [date, setDate] = useState("");
     let [time, setTime] = useState("");
     let [numGuests, setNumGuests] = useState(1);
     let [occasion, setOccasion] = useState("")
@@ -9,10 +9,6 @@ const ReservationForm = props => {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log("Form submitted");
-    }
-
-    function initializeTimes() {
-        console.log(fetchAPI(new Date(2023, 11, 29)));
     }
 
     return (
@@ -24,7 +20,10 @@ const ReservationForm = props => {
                 <p style={{lineHeight:0}}><b>Reserve a Table</b></p>
                 <div>
                     <label htmlFor="reservation-date">Choose date: </label>
-                    <input type="date" id="reservation-date" value={ date } onChange={ e => setDate(e.target.value) }/>
+                    <input type="date" id="reservation-date" value={ props.date } onChange={e => {
+                        props.setDate(e.target.value);
+                        props.setAvailableTimes(fetchAPI(new Date(e.target.value)));
+                    }}/>
                 </div>
                 <div>
                     <label htmlFor="reservation-time">Choose time: </label>
@@ -55,7 +54,6 @@ const ReservationForm = props => {
                 </div>
                 <input type="submit" value="Submit Reservation"/>
             </div>
-            <button onClick={initializeTimes}>Test</button>
         </form>
     )
 }
